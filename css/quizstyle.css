@@ -1,12 +1,26 @@
+.title {
+  font-family: 'museo-slab', serif;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #0FBF99;
+  margin-bottom: 1.25em;
+}
+
+.text {
+  font-family: 'museo-slab', serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #0FBF99;
+}
 
 .possible_answer  {
-    padding: .75em;
+  padding: .75em;
 }
 
 .possible_answer:hover {
-	background: rgba(254, 231, 88, 1);
+	background: rgba(141, 191, 15, 0.5);
 	cursor: pointer;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .correct-answer, .wrong-answer {
@@ -15,15 +29,15 @@
 }
 
 .wrong-answer {
-	background: #FF8362;
+	background: #C91E46;
 }
 
 .correct-answer {
-    background: #56a0d3;
+  background: #0FBF99;
 }
 
 .selected {
-    opacity: 1;
+  opacity: 1;
 }
 
 .selected:hover, .correct-answer:hover, .wrong-answer:hover {
@@ -33,29 +47,11 @@
 .how_you_did {
 	text-align: center;
 	padding: 1em;
-	background-color: rgb(254, 231, 88);
+	background-color: #C91E46;
 	font-weight: bold;
 	font-size: 1.25em;
-	-webkit-box-shadow: 0px 7px 5px rgba(50, 50, 50, 0.65);
-	-moz-box-shadow:    0px 7px 5px rgba(50, 50, 50, 0.65);
-	box-shadow:         0px 7px 5px rgba(50, 50, 50, 0.65);
 }
 
-/*multimedia styling*/
-
-
-.videoembed {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.videoembed iframe, .videoembed object, .videoembed embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+p {
+  font-family: "rucksack",sans-serif;
 }

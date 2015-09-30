@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/sequence-theme.basic.css" /> <!--stylesheet-->
   <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- bootstrap -->
-  <link rel="stylesheet" href="css/tinyscrollbar.css" type="text/css" media="screen"/> <!-- scrollbar css-->
   <link href="css/quizstyle.css" rel="stylesheet" media="screen" type="text/css"> <!-- quiz css -->
   <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
   <link rel="stylesheet" type="text/css" href="css/tooltipster-noir.css" />
@@ -15,7 +14,6 @@
 
 </head>
 <body>
-
     <div id="sequence" class="seq">
 
       <div class="seq-screen">
@@ -23,42 +21,46 @@
 
           <li class="seq-step1" id="step1">
             <div class="seq-content">
-              <h2 data-seq class="seq-title">Holy Guacamole!</h2>
-              <h3 data-seq class="seq-subtitle">How to make the best guacamole in town.</h3>
-              <!--<img src="css/titlepage.gif" alt="background" class="fit">-->
+              <h2 data-seq class="seq-title first cent">Holy Guacamole!</h2>
+              <h3 data-seq class="seq-subtitle first cent">How to make the best guacamole in town.</h3>
             </div>
           </li>
 
           <li class="seq-step2" id="step2">
             <div class="seq-content">
-              <h2 data-seq class="steptwo">Ingredients</h2>
-              <h3 data-seq class="seq-subtitle">The ratio is up to your personal preference. Scroll over each ingredient to find out more about each ingredient.</h3>
-
+              <h2 data-seq class="steptwo cent">Ingredients</h2>
+              <h3 data-seq class="seq-subtitle cent">The ratio is up to your personal preference. Scroll over each ingredient to find out more about each ingredient.</h3>
+              <br class="hidden-md hidden-sm hidden-xs"><br class="hidden-md hidden-sm hidden-xs">
               <div class="row top">
-                <div class="col-xs-1"><img src="css/circle.png" class="tooltip circle" title="Avocado" /></div>
-                <div class="col-xs-2"></div>
-                <div class="col-xs-3"><img src="css/circle.png" class="tooltip circle" title="Tomato" /></div>
-                <div class="col-xs-3"><img src="css/circle.png" class="tooltip circle" title="Red Onion" /></div>
-                <div class="col-xs-3"><img src="css/circle.png" class="tooltip circle" title="Jalapeno" /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip circle hidden-lg" title="Avocado: the core ingredient." /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip circle hidden-md hidden-sm hidden-xs" title="Avocado: the core ingredient." /></div>
+                <div class="col-xs-2 hidden-md hidden-sm hidden-xs"></div>
+                <div class="col-xs-3"><img src="css/circle.png" class="tooltip circle" title="Tomato: add extra tomato to make your guac more like salsa." /></div>
+                <div class="col-xs-3"><img src="css/circle.png" class="tooltip circle" title="Red Onion: can be replaced by shallots if you're looking for a milder flavor." /></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip circle" title="Jalapeno: if you don't like heat, don't add this one!" /></div>
+                <div class="col-xs-2 hidden-lg"></div>
               </div>
-              <br>
+              <br><br class="hidden-md hidden-sm hidden-xs"><br class="hidden-md hidden-sm hidden-xs">
               <div class="row middle">
                 <div class="col-xs-1"></div>
-                <div class="col-xs-2"><img src="css/circle.png" class="tooltip circle" title="Lemon" /></div>
-                <div class="col-xs-3"><img src="css/circle.png" class="tooltip circle" title="Lime" /></div>
-                <div class="col-xs-3"><img src="css/circle.png" class="tooltip circle" title="Garlic" /></div>
-                <div class="col-xs-1"><img src="css/circle.png" class="tooltip circle" title="Cilantro" /></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip circle hidden-lg" title="Lemon: not in many traditional guac recipes, but it brings out some zing." /></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip circle hidden-md hidden-sm hidden-xs" title="Lemon: not in many traditional guac recipes, but it brings out some zing." /><img src="css/circle.png" class="tooltip circle hidden-lg" title="Lime: the go to juice for guac." /></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip circle hidden-md hidden-sm hidden-xs" title="Lime: the go to juice for guac." /></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip circle" title="Garlic: just keep adding it. Never too much." /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip circle" title="Cilantro: adds a nice subtle flavor, but if you don't have any, your guac will survive." /></div>
                 <div class="col-xs-2"></div>
               </div>
-              <br>
+              <br><br class="hidden-md hidden-sm hidden-xs"><br class="hidden-md hidden-sm hidden-xs">
               <div class="row bottom">
-                <div class="col-xs-2"><img src="css/circle.png" class="tooltip" title="Salt" /></div>
-                <div class="col-xs-2"><img src="css/circle.png" class="tooltip" title="Pepper" /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip hidden-lg" title="Salt: helps balance out the creaminess of the avocados." /></div>
                 <div class="col-xs-1"></div>
-                <div class="col-xs-2"><img src="css/circle.png" class="tooltip" title="Paprika" /></div>
-                <div class="col-xs-2"><img src="css/circle.png" class="tooltip" title="Cayenne" /></div>
-                <div class="col-xs-2"><img src="css/circle.png" class="tooltip" title="Cumin" /></div>
-                <div class="col-xs-1"></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip hidden-lg" title="Pepper: important base ingredient for the spices." /><img src="css/circle.png" class="tooltip hidden-md hidden-sm hidden-xs" title="Salt" /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip hidden-md hidden-sm hidden-xs" title="Pepper: important base ingredient for the spices." /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip hidden-lg" title="Paprika: give it some kick!" /></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip hidden-md hidden-sm hidden-xs" title="Paprika: give it some kick!" /></div>
+                <div class="col-xs-2"><img src="css/circle.png" class="tooltip" title="Cayenne: generally in equal parts to the paprika." /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip hidden-lg" title="Cumin: be careful not to add too much, a little goes a long way." /></div>
+                <div class="col-xs-1"><img src="css/circle.png" class="tooltip hidden-md hidden-sm hidden-xs" title="Cumin: be careful not to add too much, a little goes a long way." /></div>
               </div>
             </div>
           </li>
@@ -75,6 +77,7 @@
             <div class="seq-content">
               <h2 data-seq class="seq-title">Step 2</h2>
               <h3 data-seq class="seq-subtitle">Bring Out The Knives</h3>
+              <p class="side">Mince to tiny square pieces. Dice to slightly bigger cubes. Chop to thin, short slices.</p>
             </div>
           </li>
 
@@ -82,6 +85,7 @@
             <div class="seq-content">
               <h2 data-seq class="seq-title">Step 3</h2>
               <h3 data-seq class="seq-subtitle">Toss It All In</h3>
+              <p class="side">Add the garlic, onion, jalapeno, cilantro, pepper, paprika, cayenne and cumin. Mix together.</p>
             </div>
           </li>
 
@@ -89,6 +93,7 @@
             <div class="seq-content">
               <h2 data-seq class="seq-title">Step 4</h2>
               <h3 data-seq class="seq-subtitle">Add Some Acidity</h3>
+              <p class="side">Squeeze lemon and lime juice on top. Stir to incorporate it into the mixture.</p>
             </div>
           </li>
 
@@ -96,19 +101,14 @@
             <div class="seq-content">
               <h2 data-seq class="seq-title">Step 5</h2>
               <h3 data-seq class="seq-subtitle">Chill and Serve</h3>
+              <p class="side-small">Chill 1 hour.</p>
             </div>
           </li>
 
           <li class="seq-step8" id="step8">
             <div class="seq-content">
-              <div id="scrollbar1">
-                    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-                    <div class="viewport">
-                         <div class="overview">
-                           <div id="quiz"></div>
-
-                         </div>
-                    </div>
+              <div class="scroll">
+                  <div id="quiz"></div>
                 </div>
             </div>
           </li>
@@ -144,19 +144,6 @@
 
   <script type="text/javascript">
       var quiz = jQuery('#quiz').quiz('1cNxbcJdd53XFwWKNMIhag2EP-WY3WtkYhSOy0q1YoxY'); //your published spreadsheet key or URL goes here
-  </script>
-
-  <script type="text/javascript">
-      var quiz = jQuery('#quiz').quiz('1cNxbcJdd53XFwWKNMIhag2EP-WY3WtkYhSOy0q1YoxY'); //your published spreadsheet key or URL goes here
-  </script>
-
-  <!-- build:js jquery.tinyscrollbar.js -->
-  <script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
-  <!-- /build -->
-  <script type="text/javascript">
-      $(document).ready(function(){
-          $('#scrollbar1').tinyscrollbar();
-      });
   </script>
 </body>
 

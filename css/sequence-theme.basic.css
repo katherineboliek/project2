@@ -26,10 +26,10 @@ body,
 html,
 .seq {
   /* Uncomment to make the theme full-screen */
-  /* width: 100% !important; */
-  /* max-width: 100% !important; */
-  /* height: 100% !important; */
-  /* max-height: 100% !important; */
+/*  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;*/
 }
 
 /* Google Web Font */
@@ -41,10 +41,11 @@ html,
   height: 420px;
   max-width: 100%;
   /* Center the Sequence container on the page */
-  margin: 0 auto;
+  margin: 0 0 0 0;
   padding: 0;
   /* Some basic styles */
   font-family: sans-serif;
+  align: center;
 }
 
 .seq .seq-pagination,
@@ -89,7 +90,7 @@ html,
   height: 28px;
   cursor: pointer;
   background: none;
-  border: blue solid 2px;
+  border: #C91E46 solid 2px;
   -webkit-transition-duration: .1s;
   transition-duration: .1s;
   -webkit-transition-property: background-color, border-radius;
@@ -102,42 +103,42 @@ html,
 
 .seq .seq-pagination > *:nth-child(1):focus,
 .seq .seq-pagination > *:nth-child(1):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 } /*targets the color inside the page identifier*/
 
 .seq .seq-pagination > *:nth-child(2):focus,
 .seq .seq-pagination > *:nth-child(2):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 }
 
 .seq .seq-pagination > *:nth-child(3):focus,
 .seq .seq-pagination > *:nth-child(3):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 }
 
 .seq .seq-pagination > *:nth-child(4):focus,
 .seq .seq-pagination > *:nth-child(4):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 }
 
 .seq .seq-pagination > *:nth-child(5):focus,
 .seq .seq-pagination > *:nth-child(5):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 }
 
 .seq .seq-pagination > *:nth-child(6):focus,
 .seq .seq-pagination > *:nth-child(6):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 }
 
 .seq .seq-pagination > *:nth-child(7):focus,
 .seq .seq-pagination > *:nth-child(7):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 }
 
 .seq .seq-pagination > *:nth-child(8):focus,
 .seq .seq-pagination > *:nth-child(8):hover {
-  background-color: #2BBF8E;
+  background-color: #0FBF99;
 }
 
 .seq .seq-canvas {
@@ -159,8 +160,8 @@ html,
   width: 100%;
   height: 100%;
   white-space: normal;
-  text-align: center;
-  color: #8DBF0F;
+  text-align: left;
+  color: #FFF;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -169,7 +170,7 @@ html,
 
 .seq .seq-canvas > *:before {
   /* Vertically align .seq-content */
-  content: "";
+
   display: inline-block;
   vertical-align: middle;
   height: 100%;
@@ -194,8 +195,8 @@ html,
   width: 100%;
   height: 100%;
   white-space: normal;
-  text-align: center;
-  color: #8DBF0F;
+  text-align: left;
+  color: #FFF;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -214,8 +215,8 @@ html,
   /* Default styles for content */
   display: inline-block;
   vertical-align: middle;
-  max-width: 720px;
-  margin: 0 4%;
+  max-width: 1000px;
+  margin: 0 6% 0 6%;
   /* Reset the font-size from 0 back to 16 */
   font-size: 16px;
 }
@@ -247,8 +248,6 @@ html,
   background-position: center;
   background-size: cover;
 }
-
-
 
 .seq .seq-step4 {
   background-color: #fff;
@@ -296,13 +295,13 @@ html,
   transform: translateZ(0);
 }
 
-.seq .seq-title {  margin: -6em 0 0 0;}
+.seq .seq-title {  margin: -4.7em 0 0 0;}
 
 .steptwo {  margin: -2em 0 0 0;
   font-family: 'museo-slab', serif;
   font-weight: 900;
-  font-size: 1.8em;
-    color: #BF0F2C;
+  font-size: 2.4em;
+  color: #C91E46;
   }
 
 .seq .seq-subtitle {
@@ -315,14 +314,15 @@ html,
   transform: translateZ(0);
   font-family: 'museo-slab', serif;
   font-weight: 500;
-  font-size: 1em;
+  font-style: italic;
+  font-size: 1.8em;
   color: #0FBF99;
 }
 
 .seq .seq-title {
   font-family: 'museo-slab', serif;
   font-weight: 900;
-  font-size: 1.8em;
+  font-size: 2.4em;
     color: #BF0F2C;
 }
 
@@ -472,7 +472,7 @@ html,
   transform: scale(1) translateZ(0);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .seq {
     /* Make the container 16:9 but no bigger than 90% of the screen height */
     position: relative;
@@ -513,6 +513,7 @@ html,
   .seq .seq-title,
   .seq .seq-subtitle {
     font-size: 1.4em;
+    margin:
   }
 
   .seq .seq-title {
@@ -520,16 +521,37 @@ html,
   }
 }
 
+.side {
+  text-align: left;
+  align: left;
+  font-family: "rucksack",sans-serif;
+  color: #8DBF0F;
+}
+
+.side-small {
+  color: #8DBF0F;
+}
+
 @media only screen and (max-width: 500px) {
-  .steptwo {  margin: -2em 0 0 0;
+  .steptwo {  margin: -3em 0 0 1em;
     font-family: 'museo-slab', serif;
     font-weight: 900;
     font-size: 1.8em;
       color: #BF0F2C;
     }
 
+  .first {
+    padding: 0 1.5em 0 1.5em;
+    margin: 3em 0 0 0;
+  }
+
+
+  .seq .seq-subtitle {
+    font-size: 1em;
+  }
+
   .top {
-    padding: 2em 0 0 0;
+    padding: 3em 0 0 0;
   }
 
   .middle {
@@ -537,16 +559,39 @@ html,
   }
 
   .bottom {
-    padding: 0 0 2em 0;
+    padding: 2em 0 0 0;
+  }
+  .scroll {
+    width: 340px;
+    height:300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 0 0 0.7em;
+  }
+  .side {
+      font-size: 1em;
+      width: 39%;
+  }
+  .side-small {
+    font-size: 1em;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .steptwo {  margin: -1em 0 0 0;
+  .steptwo {  margin: -2em -1em 0 2em;
     font-family: 'museo-slab', serif;
     font-weight: 900;
     font-size: 1.8em;
       color: #BF0F2C;
+    }
+
+    .first {
+      padding: 0 6em 0 9em;
+    }
+
+  .seq {
+      margin: 0 0 0 2em;
     }
 
   .top {
@@ -561,6 +606,26 @@ html,
   .bottom {
     padding: 3em 0 2em 0;
   }
+  .scroll {
+    width: 900px;
+    height:500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 2em 6em 0 8em;
+  }
+  .side {
+    font-size: 2em;
+    width: 45%;
+  }
+  .side-small {
+    font-size: 2em;
+    width: 100%;
+  }
 }
+
+.cent {
+    text-align: center;
+}
+
 
 /*# sourceMappingURL=sequence-theme.basic.css.map */
