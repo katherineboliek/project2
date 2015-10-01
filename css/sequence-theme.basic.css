@@ -532,6 +532,52 @@ html,
   color: #8DBF0F;
 }
 
+@media only screen and (max-width: 800px) {
+  .steptwo {  margin: -3em 0 0 1em;
+    font-family: 'museo-slab', serif;
+    font-weight: 900;
+    font-size: 1.8em;
+      color: #BF0F2C;
+    }
+
+  .first {
+    padding: 0 1.5em 0 1.5em;
+    margin: 3em 0 0 0;
+  }
+
+
+  .seq .seq-subtitle {
+    font-size: 1em;
+  }
+
+  .top {
+    padding: 3em 0 0 0;
+  }
+
+  .middle {
+    padding: 2em 0 0 0;
+  }
+
+  .bottom {
+    padding: 2em 0 0 0;
+  }
+  .scroll {
+    width: 340px;
+    height:300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 0 0 0.7em;
+  }
+  .side {
+      font-size: 1em;
+      width: 39%;
+  }
+  .side-small {
+    font-size: 1em;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .steptwo {  margin: -3em 0 0 1em;
     font-family: 'museo-slab', serif;
@@ -574,6 +620,51 @@ html,
   }
   .side-small {
     font-size: 1em;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .steptwo {  margin: -2em -1em 0 2em;
+    font-family: 'museo-slab', serif;
+    font-weight: 900;
+    font-size: 1.8em;
+      color: #BF0F2C;
+    }
+
+    .first {
+      padding: 0 6em 0 7em;
+    }
+
+  .seq {
+      margin: 0 0 0 2em;
+    }
+
+  .top {
+    padding: 0 0 4em 0;
+    margin: 0 -2em 0 -2em;
+  }
+
+  .middle {
+    padding: 3em 0 2em 0;
+  }
+
+  .bottom {
+    padding: 3em 0 2em 0;
+  }
+  .scroll {
+    width: 400px;
+    height:500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 2em 6em 0 8em;
+  }
+  .side {
+    font-size: 2em;
+    width: 45%;
+  }
+  .side-small {
+    font-size: 2em;
     width: 100%;
   }
 }
